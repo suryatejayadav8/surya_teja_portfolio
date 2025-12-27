@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <h1>My Portfolio</h1>
+
+            <nav>
+                <img src="Newportfoilo/name.png.png" class="logo1">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-list"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>CLOUD COMPUTING</p>
+                <h1>Hii, I'm <span>Surya Teja</span><br>Welcome to My Website</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- about ---------------->
+    <div id="about">
+        <div class="about-row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">
+                    I am Surya Teja, a B.Tech fresher aspiring to become a DevOps Engineer. I have hands-on experience with Git, Linux, Docker, Jenkins, and AWS, and a strong understanding of CI/CD pipelines and cloud-based deployments. I am passionate about automation, system reliability, and continuous improvement. I am eager to apply my knowledge, learn from experienced professionals, and grow in a professional DevOps environment.
+                </p>
+                <div class="tap_title">
+                <p class="tap-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tap-links" onclick="opentab('experience')">Experience</p>
+                <p class="tap-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul class="black-list">
+                    <li><span>• DevOps & Tools</span><br>Git, Linux, Docker, Jenkins, CI/CD pipelines, AWS</li>
+                    <li><span>• Programming & Scripting</span><br>Python, Shell scripting (basic)</li>
+                    <li><span>• Other Skills</span><br>Cloud deployment, automation, version control</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul class="black-list">
+                    <li><span>• Fresher – No professional experience yet</span></li>
+                    <li>• Automated Deployment Pipeline – Jenkins & Docker</li>
+                    <li>• AWS EC2 Cloud Deployment</li>
+                    <li>• Git version control projects</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul class="black-list">
+                    <li><span>• B.Tech – Computer Science Engineering</span></li>
+                    <li>Narsimha Reddy Engineering College, Hyderabad</li>
+                    <li>2023 – 2027</li>
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="about-col-2">
+                <img src="Newportfoilo/lib1.png.jpeg">
+            </div>
+        </div>
+    </div>
+<!-- ------------------ services ---------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <i class="fa-brands fa-jenkins"></i>
+                <h1>DevOps Automation</h1>
+    <p>Design and implement automated CI/CD pipelines using Jenkins, Docker,
+        and modern DevOps tools to ensure faster, reliable, and consistent
+        application deployments.</p>
+            <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-cloud"></i>
+                <h1>Cloud Deployment</h1>
+                    <p>Deploy, configure, and manage scalable applications on AWS cloud
+                        services including EC2, S3, IAM, and security groups with best practices.</p>           
+                         <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-github"></i>
+                <h1>Version Control & Git</h1>
+                    <p> Perform server configuration, user management, process monitoring,
+        shell scripting, and troubleshooting to maintain stable Linux systems.</p>            
+        <a href="#">Learn More</a>
+            </div>
+
+            <!-- services items go here -->
+        </div>
+    </div>
+</div>
+  <!-----------------portfolio---------------->
+  <div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+
+    <div class="portfolio-list">
+
+      <div class="portfolio">
+        <img src="Newportfoilo/devops4.png.jpg" alt="">
+        <div class="layer">
+          <h3>CI/CD Pipeline</h3>
+          <p>Jenkins & Docker automation</p>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <img src="Newportfoilo/devops2.png.png" alt="">
+        <div class="layer">
+          <h3>DevOps Tools</h3>
+          <p>Git, Linux, Docker</p>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <img src="Newportfoilo/devops3.png.png" alt="">
+        <div class="layer">
+          <h3>Cloud Deployment</h3>
+          <p>AWS EC2 & Security</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+            <!-- Portfolio items can be added here -->                  
+        
+    
+
+<section id="contact">
+  <div class="contact-container">
+    <!-- Contact Header -->
+    <h2 class="contact-title">Let’s <span>Collaborate</span>
+    </h2>
+    
+    <p class="contact-subtitle">Building better systems together through DevOps    </p>
+        <div class="social-icons">  
+            <a href="https://x.com/the_teju_08"><i class="fa-brands fa-twitter"></i></a>  
+            <a href="https://www.instagram.com/the_teju_08?igsh=MTV1b3IzNXZqb3l4Ng=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/surya-teja-yadav" target="_blank">
+  <i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+  </div>
+  </div>
+     <a href="" class="btnbtn2">Download Resume</a>
+
+  
+    
+    <!-- Contact Form -->
+    <div class="contact-card">
+      <h3>📨 Send me confirmation</h3>
+
+      <form name="submit-to-google-sheet">
+        <div class="input-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+
+        <button type="submit">➤ Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-card">
+      <h3>📌 Contact Information</h3>
+
+      <p>✉ <a href="mailto:suraytejayadav8888@gmail.com">
+        suraytejayadav8888@gmail.com
+      </a></p>
+
+      
+
+      <p>📍 Hyderabad, India</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="contact-card">
+      <h3>🔗 Connect with me</h3>
+
+      <p>
+ 
+<i class="fa-brands fa-github"></i><a href="https://share.google/l3AXkgnqADF6v42Lx" target="_blank">
+        GitHub – Surya Teja Yadav
+      </a></p>
+
+      <p><i class="fa-brands fa-square-linkedin"></i><a href="https://www.linkedin.com/in/surya-teja-yadav" target="_blank">
+
+        LinkedIn – Surya Teja Yadav
+      </a></p>
+    </div>
+
+    <!-- CTA -->
+    <div class="contact-cta">
+      <h3>Ready to Collaborate?</h3>
+      <p>Let’s work together on exciting projects.</p>
+      <a href="#contact" class="cta-btn">Start a Project</a>
+    </div>
+    <div class="copyright">
+       <p>© 2025 Surya Teja Yadav All Rights Reserved</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function opentab(tabname) {
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tap-links");
+
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+
+    event.target.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPDDja6jkYNoggbfymGqGXtxtCOSfDzmk-C51-JW6nELUNRSowfmvNfwlcjLLFeMH4/exec';
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Message sent successfully!"))
+      .catch(error => alert("Error! Try again"));
+  });
+</script>
+
+
+
+
+</body>
+</html>
