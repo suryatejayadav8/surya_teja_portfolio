@@ -177,16 +177,17 @@
       <h3>📨 Send me confirmation</h3>
 
       <form name="submit-to-google-sheet">
-        <div class="input-row">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-        </div>
 
-        <input type="text" placeholder="Subject" required>
-        <textarea rows="4" placeholder="Your Message" required></textarea>
+  <input type="text" name="Name" placeholder="Your Name" required>
+  <input type="email" name="Email" placeholder="Your Email" required>
+  <input type="text" name="Subject" placeholder="Subject" required>
 
-        <button type="submit">➤ Send Message</button>
-      </form>
+  <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send</button>
+</form>
+
+
     </div>
 
     <!-- Contact Info -->
@@ -265,16 +266,28 @@
 
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPDDja6jkYNoggbfymGqGXtxtCOSfDzmk-C51-JW6nELUNRSowfmvNfwlcjLLFeMH4/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz01jx_1Ok1MzfdQKw3j2mk7nF8aMfOB3Mw5CC8FIXrIvnVBt6UmHfZM4yAuWUhvNS6/exec';
   const form = document.forms['submit-to-google-sheet'];
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then(response => alert("Message sent successfully!"))
-      .catch(error => alert("Error! Try again"));
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form),
+      mode: 'no-cors'
+    })
+    .then(() => {
+      alert("Message sent successfully ✅");
+      form.reset();
+    })
+    .catch(() => {
+      alert("Error! Please try again ❌");
+    });
   });
 </script>
+
+
 
 
 
