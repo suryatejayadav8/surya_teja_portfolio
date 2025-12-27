@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-    padding: 20px 10%;
+    padding: 8px 10%;
 }
 
 nav{
@@ -65,16 +65,16 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 10px;
+
     font-size: 20px;
 }
 
 .header-text p{
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .header-text h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 10px;
 }
 

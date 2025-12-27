@@ -1,0 +1,12 @@
+# Ignore system files
+*.lnk
+*.dat
+*.log
+.AppData/
+Documents/
+Downloads/
+OneDrive/
+.vscode/
+.aws/
+.ssh/
+
